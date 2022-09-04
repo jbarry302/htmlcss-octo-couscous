@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- @author https://github.com/jbarry302 -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            html, body {
+                display: flex;
+                justify-content: center;
+                min-height: 100%;
+                min-width: 100%;
+            }
+            h1 {
+                font-family: Calibri, sans-serif;
+                font-weight: bold;
+                color: white;
+                align-self: center;
+            }
+            body {
+                background: url(lofi-bg.gif);
+                background-size: 100% 100%;
+            }
+            .card_container {
+                display: flex;
+                height: auto;
+                width: auto;
+            }
+            .card {
+                display: flex;
+                border-radius: 10px;
+                flex-direction: column;
+                min-width: 750px;
+                min-height: 400px;
+                margin: auto;
+                background-color: rgba(34, 78, 134, 0.7);
+                box-shadow: none;
+                padding: 10px;
+                -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+                -moz-box-shadow: 0 0 10px rgb(0,0,0);
+            }
+            .content_continaer {
+                display: flex;
+                
+            }
+            table {
+                width: 100%;
+            }
+            table, th, td {
+                border: 1px solid #dadfe8;
+                border-collapse: collapse;
+                padding: 4px 5px 4px 5px
+            }
+            /* thead, tfoot {
+                font-weight: bold;
+                text-align: center;
+                background-color: blue;
+            } */
+            thead {
+                font-weight: bold;
+                text-align: center;
+                font-size: 1em;
+                background-color: #5b95f9;
+            }
+            tr, td {
+                text-align: center;
+            }
+            tbody > tr:nth-child(even) {
+                background-color: #ffffff;
+                font-size: 0.95em;
+            }
+            tbody > tr:nth-child(odd) {
+                background-color: #e8f0fe;
+                font-size: 0.95em;
+            }
+            tbody > tr > td:nth-child(3) {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card_container">
+            <div class="card">
+                <h1>Data</h1>
+                <div class="content_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No.</td>
+                                <td>Full Name</td>
+                                <td>Address</td>
+                                <td>Contact No.</td>
+                                <td>Temperature (°C)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ronaldo Willis</td>
+                                <td>2774 Creekside Lane Santa Barbara, California</td>
+                                <td>206-918-8732</td>
+                                <td>37.6</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Cinar Carey</td>
+                                <td>2936 Alfred Drive Queens, New York</td>
+                                <td>614-608-0904</td>
+                                <td>35.8</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Maja Hastings</td>
+                                <td>2015 Poplar Avenue San Diego, California</td>
+                                <td>910-723-3427</td>
+                                <td>37.2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Yash Burns</td>
+                                <td>888 Roosevelt Wilson Lane Colton, California</td>
+                                <td>218-640-2220</td>
+                                <td>36.0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Mitchel Pacheco</td>
+                                <td>1401 Layman Avenue Saint Pauls, North Carolina</td>
+                                <td>313-452-9938</td>
+                                <td>35.9</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Cai Oneal</td>
+                                <td>39 Turkey Pen Lane Montgomery, Alabama</td>
+                                <td>972-333-2320</td>
+                                <td>38.2</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Lindsey Stevenson</td>
+                                <td>3568 Elliot Avenue Seattle, Washington</td>
+                                <td>216-590-6429</td>
+                                <td>37.1</td>
+                            </tr>
+                        </tbody>
+                        <!-- <tfoot>
+                            <tr>
+                                <td>No.</td>
+                                <td>Full Name</td>
+                                <td>Address</td>
+                                <td>Contact No.</td>
+                                <td>Temperature</td>
+                            </tr>
+                        </tfoot> -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- @author https://github.com/jbarry302 -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+        html, body {
+            display: flex;
+            justify-content: center;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        h1 {
+            font-family: Calibri, sans-serif;
+            font-weight: bold;
+            color: white;
+            align-self: center;
+        }
+        body {
+            background: url(lofi-bg.gif);
+            background-size: 100% 100%;
+        }
+        .card_container {
+            display: flex;
+            height: auto;
+            width: auto;
+        }
+        .card {
+            display: flex;
+            border-radius: 10px;
+            min-width: 500px;
+            min-height: 350px;
+            margin: auto;
+            background-color: rgba(34, 78, 134, 0.7);
+            box-shadow: none;
+            padding: 10px;
+            -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+            -moz-box-shadow: 0 0 10px rgb(0,0,0);
+        }
+        .login_form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .fullname_container {
+            display: flex;
+            align-items: center;
+            min-width: 90%;
+        }
+        .address_container {
+            display: flex;
+            align-items: center;
+            min-width: 90%;
+        }
+        .contact_container {
+            display: flex;
+            align-items: center;
+            min-width: 90%;
+        }
+        .temperature_container {
+            display: flex;
+            align-items: center;
+            min-width: 90%;
+        }
+        .fullname_container #fullname {
+            min-width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .address_container  #address {
+            min-width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contact_container  #contact {
+            min-width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .temperature_container  #temperature {
+            min-width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #login {
+            width: 100%;
+            background-color: rgb(10, 8, 156);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #login:hover {
+            background-color: rgb(56, 89, 238);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="card_container">
+            <div class="card">
+                <form class="login_form" action="#">
+                    <h1>Form</h1>
+                    <div class="fullname_container">
+                        <img src="icon_user.svg" width="30px" height="30px" style="margin-right: 10px;" />
+                        <input type="text" id="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="address_container">
+                        <img src="icon_address.svg" width="30px" height="30px" style="margin-right: 10px;"/>
+                        <input type="text" id="address" placeholder="Address">
+                    </div>
+                    <div class="contact_container">
+                        <img src="icon_contact.svg" width="30px" height="30px" style="margin-right: 10px;"/>
+                        <input type="tel" id="contact" placeholder="Contact Number">
+                    </div>
+                    <div class="temperature_container">
+                        <img src="icon_temp.svg" width="30px" height="30px" style="margin-right: 10px;"/>
+                        <input type="number" id="temperature" placeholder="Temperature (Celsius)" step="0.5" value="36.5" min="0" max="100">
+                    </div>
+                    <input type="submit" id="login" value="Submit" placeholder="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
